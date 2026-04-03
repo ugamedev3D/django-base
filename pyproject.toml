@@ -1,0 +1,13 @@
+[project]
+name = "django-baseproject"
+version = "0.1.0"
+dependencies = [
+    "django>=6.0.3",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+django-base = "baseproject.cli:create_project"
